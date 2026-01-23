@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceramah Berbayar Profesional</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+}
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+header {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.section {
+    background: white;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+h2 { color: #0d6efd; }
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #198754;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* === PENCERAMAH === */
+.penceramah {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.penceramah img {
+    width: 150px;
+    border-radius: 10px;
+    border: 3px solid #0d6efd;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .penceramah {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Ceramah Eksklusif Web & Teknologi</h1>
+    <p>Naik taraf kemahiran profesional anda</p>
+</header>
+
+<div class="container">
+
+<!-- PENCERAMAH -->
+<div class="section">
+    <h2>Penceramah</h2>
+
+    <div class="penceramah">
+        <img src="gambar.jpeg" alt="Sabri bin Saep">
+
+        <div>
+            <p><strong>Nama:</strong> Sabri bin Saep</p>
+            <p><strong>Jawatan:</strong> Pensyarah Kanan</p>
+            <p><strong>Kepakaran:</strong> Web Development & Cyber Security</p>
+        </div>
+    </div>
+</div>
+
+<!-- MAKLUMAT CERAMAH -->
+<div class="section">
+    <h2>Maklumat Ceramah</h2>
+    <p><strong>Tarikh:</strong> 15 Oktober 2026</p>
+    <p><strong>Masa:</strong> 9.00 pagi – 4.00 petang</p>
+    <p><strong>Lokasi:</strong> Dewan Seri</p>
+</div>
+
+<!-- YURAN -->
+<div class="section">
+    <h2>Yuran</h2>
+    <p><strong>RM2,500.00 / slot</strong></p>
+</div>
+
+<!-- BORANG -->
+<div class="section">
+    <h2>Borang Pendaftaran</h2>
+
+    <form action="pengesahan.php" method="POST" enctype="multipart/form-data">
+
+        <label>Nama Penuh</label>
+        <input type="text" name="nama" required>
+
+        <label>Alamat E-mel</label>
+        <input type="email" name="email" required>
+
+        <label>Nombor Telefon</label>
+        <input type="text" name="telefon" required>
+
+        <label>Kategori Peserta</label>
+        <select name="kategori" required>
+            <option value="">-- Pilih --</option>
+            <option>Pelajar</option>
+            <option>Pensyarah</option>
+            <option>Orang Awam</option>
+            <option>Korporat</option>
+        </select>
+
+        <label>Bilangan Slot</label>
+        <input type="number" name="slot" min="1" required>
+
+        <label>Bukti Pembayaran</label>
+        <input type="file" required>
+
+        
+        <label>
+            <input type="checkbox" required style="width:auto; margin-right:6px;">
+            Saya bersetuju dengan Terma & Syarat
+        </label>
+        <br><br>
+
+        <button type="submit">Hantar</button>
+    </form>
+</div>
+
+</div>
+</body>
+</html>
+
+

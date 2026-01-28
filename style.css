@@ -1,25 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f8;
+    background: #e8f5e9;  /* light green background */
     margin: 0;
 }
 
-/* HEADER */
 header {
-    background: #0d6efd;
+    background: #2e7d32;  /* dark green */
     color: white;
-    text-align: center;
     padding: 30px;
+    text-align: center;
 }
 
-/* CONTAINER */
 .container {
     max-width: 900px;
     margin: auto;
     padding: 20px;
 }
 
-/* SECTION */
 .section {
     background: white;
     padding: 25px;
@@ -28,39 +25,9 @@ header {
 }
 
 h2 {
-    color: #0d6efd;
+    color: #2e7d32;  /* green headings */
 }
 
-/* FORM */
-input, select {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 15px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: #198754;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* CHECKBOX */
-.checkbox {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 15px;
-}
-
-.checkbox input {
-    width: auto;
-}
-
-/* PENCERAMAH */
 .penceramah {
     display: flex;
     gap: 20px;
@@ -68,15 +35,53 @@ button {
 }
 
 .penceramah img {
-    width: 150px;
-    border-radius: 10px;
-    border: 3px solid #0d6efd;
+    width: 140px;
+    border-radius: 8px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px) {
-    .penceramah {
-        flex-direction: column;
-        text-align: center;
-    }
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #2e7d32;  /* checkbox green */
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px;
+    background: #2e7d32;  /* green button */
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1b5e20;  /* darker green on hover */
+}
+
+.success {
+    color: #2e7d32;  /* green success message */
+    font-weight: bold;
 }
